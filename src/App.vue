@@ -1,18 +1,21 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <router-view :key="$route.path"></router-view>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+// import Map from './components/Map'
+// // import Rule from './components/Rule'
+// import Roll from './components/Roll'
+// import Player from './components/Player'
 export default {
   name: 'App',
-  components: {
-    HelloWorld
-  }
+  // components: {
+  //   Map,
+  //   Roll,
+  //   Player
+  // }
 }
 </script>
 
@@ -21,8 +24,14 @@ export default {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  width: 100%;
+  height:100vh;
+
+
+
+}
+.map-rule {
+  display: flex;
+  justify-content: space-between;
 }
 </style>
